@@ -1,0 +1,16 @@
+doctype html
+html
+    head
+        meta(charset="utf-8")
+        title hello world
+        link(rel="stylesheet" href="index.css")
+    body
+        div.everything
+            div#wrap
+                pre#editor var a = function() { console.log('hello') }
+            iframe.pure-ace(src="ace-demo.html")
+
+
+        script(src="../bower_components/ace-builds/src-noconflict/ace.js")
+        script(src="../ace-shim.js")
+        script(src="index.js")
