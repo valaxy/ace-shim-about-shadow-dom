@@ -17,3 +17,7 @@ aceShimAboutShadowDom({
 
 # AMD Solution
 Not has a AMD Solution for now.
+
+
+# If it doesn't work well
+Please report for a issue
