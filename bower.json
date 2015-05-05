@@ -1,19 +1,19 @@
 {
-  "name": "ace-shim-about-shadow-dom",
-  "version": "0.0.0",
-  "homepage": "https://github.com/valaxy/ace-shim-about-shadow-dom",
-  "authors": [
-    "valaxy <valaxy@qq.com>"
-  ],
-  "license": "MIT",
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ],
-  "devDependencies": {
-    "ace-builds": "~1.1.9"
-  }
+    "name": "ace-shim-about-shadow-dom",
+    "version": "0.1.0-dev",
+    "homepage": "https://github.com/valaxy/ace-shim-about-shadow-dom",
+    "authors": [
+        "valaxy <valaxy@qq.com>"
+    ],
+    "license": "MIT",
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ],
+    "devDependencies": {
+        "ace-builds": "~1.1.9"
+    }
 }
