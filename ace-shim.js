@@ -1,7 +1,7 @@
 (function () {
 
 	var fixStyle = function (el) {
-		var style1 = document.getElementById('ace_editor.css')
+		var style1 = document.getElementById('ace_editor.css') || document.getElementById('ace_editor')
 		var style2 = document.getElementById('ace-tm')
 		var style3 = style2.nextSibling
 		el.appendChild(style1)
