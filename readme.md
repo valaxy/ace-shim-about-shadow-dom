@@ -1,4 +1,4 @@
-A Shim Solution about ace working in shadow dom 
+Makes ace editor instances work fine when some in shadow dom and some not in shadow dom
 
 # Global Variable Solution
 ```html
@@ -22,7 +22,9 @@ Check the demo to see how to use
 Not has a AMD Solution for now.
 
 # Addition Notes
-- no matter how many ace editor instance exist, `aceShimAboutShadowDom` should only called once
+- No matter how many ace editor instance exist, `aceShimAboutShadowDom` should only called once
+- Style will be append to each shadow, so this behavior Consumes huge memory(maybe not that much huge)
 
-# If it doesn't work well
-Please report for a issue
+
+> Please report a issue if there is a bug
+> Please help correct grammar error by pulling a request
