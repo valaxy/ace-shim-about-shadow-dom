@@ -10,11 +10,19 @@ html
                 button(onclick="changeTheme()") change Theme
                 button(onclick="changeModel()") change Mode
             div.content
-                div.shadow
-                    h1 Shadow Dom
-                    iframe(src="shadow.html")
+                div.shadows
+                    div.shadow1
+                        h1 Shadow Dom 1
+                        div.root
+                    div.shadow2
+                        h1 Shadow Dom 2
+                        div.root
                 div.normal
                     h1 Normal
-                    iframe(src="normal.html")
+                    div.root
 
+
+        script(src="../bower_components/ace-builds/src-noconflict/ace.js")
+        script(src="../ace-shim.js")
+        script(src="../bower_components/jquery/dist/jquery.js")
         script(src="demo.js")

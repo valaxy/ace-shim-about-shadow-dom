@@ -1,19 +1,19 @@
 @charset "utf-8";
 
+html, body {
+	height:  100%;
+	padding: 0;
+	margin:  0;
+}
+
 .everything {
-	position: absolute;
-	top:      0;
-	left:     0;
-	right:    0;
-	bottom:   0;
+	display:        flex;
+	flex-direction: row;
+	height:         100%;
 
 	.btns {
-		position:     absolute;
-		left:         0;
-		bottom:       0;
-		top:          0;
-		width:        150px;
-		border-right: 1px solid #333;
+		flex:         0 150px;
+		border-right: 1px solid #999;
 
 		button {
 			cursor:  pointer;
@@ -24,52 +24,61 @@
 	}
 
 	.content {
-		position: absolute;
-		left:     150px;
-		right:    0;
-		top:      0;
-		bottom:   0;
+		display:        flex;
+		flex-direction: row;
+		flex:           1;
 
-		.shadow {
-			position:     absolute;
-			left:         0;
-			top:          0;
-			bottom:       0;
-			margin:       0;
-			width:        50%;
-			height:       100%;
-			border-right: 1px solid #999;
+		.shadows {
+			flex:           1;
+			display:        flex;
+			flex-direction: column;
+
+			.shadow1, .shadow2 {
+				flex:         1;
+				border-right: 1px solid #999;
+			}
+
+			.shadow2 {
+				border-top: 1px solid #999;
+			}
 		}
 
 		.normal {
-			position:    absolute;
-			right:       0;
-			top:         0;
-			bottom:      0;
-			margin:      0;
-			width:       50%;
-			height:      100%;
-			border-left: 1px solid #999;
+			flex: 1
 		}
 
-		.shadow, .normal {
+		.shadow1, .shadow2, .normal {
+			position: relative;
+
 			h1 {
 				position:      absolute;
 				height:        39px;
 				top:           0;
 				width:         100%;
-				border-bottom: 1px solid #ccc;
+				border-bottom: 1px solid #999;
 				text-align:    center;
 				margin:        0;
 			}
 
-			iframe {
+			.root {
 				border:   none;
 				position: absolute;
 				width:    100%;
 				top:      40px;
-				height:   600px;
+				bottom:   0;
+				left:     0;
+				right:    0;
+
+				&::shadow > div {
+					position: absolute;
+					top:      0;
+					bottom:   0;
+					right:    0;
+					left:     0;
+					margin:   0;
+				}
 			}
 		}
 	}
 }
+
